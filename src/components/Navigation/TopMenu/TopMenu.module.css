@@ -1,0 +1,65 @@
+.TopMenu {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f1f1;
+}
+
+.Container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftBlock {
+    display: flex;
+    align-items: center;
+    max-width: 40%;
+}
+
+.rightBlock {
+    display: flex;
+}
+
+.ModalButton {
+    display: table;
+    font-size: 18px;
+    margin-right: 20px;
+    background-color: #0a6c85;
+    vertical-align: middle;
+    color: #fff;
+    padding: 10px 20px;
+    height: 100%;
+}
+
+.p {
+    margin-left: 1rem;
+    line-height: 16px;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.TopMenu {
+    /* align-items: center; */
+}
+
+.TopMenu li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.MenuItems {
+    font-size: 1rem;
+    color: #4d4d4d;
+}
+
+.MenuItems:hover {
+    text-decoration: underline;
+    color: #818181;
+}
+
+a {
+    text-decoration: none;
+}

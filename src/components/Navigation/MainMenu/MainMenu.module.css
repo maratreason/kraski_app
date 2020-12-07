@@ -1,0 +1,68 @@
+.MainMenu {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #f2ad2c 0%,  #21861f 100%);
+}
+
+.Container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+
+.MainMenuItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 20px 20px;
+    color: #fff;
+    flex-grow: 1;
+    width: 300px;
+    cursor: pointer;
+}
+
+.MainMenuItem:nth-child(2) {
+    background: #0a6c85;
+}
+
+.MainMenuItem:nth-child(2):hover {
+    background: #09596d;
+}
+
+.MainMenuItem:nth-child(3) {
+    background: #e02020;
+}
+
+.MainMenuItem:nth-child(3):hover {
+    background: #c51818;
+}
+
+.MainMenuItem:nth-child(1):hover {
+    background: #d39523;
+}
+
+.MainMenuItem:nth-child(4):hover {
+    background: #197018;
+}
+
+.MainMenuItem img {
+    width: 50px;
+    height: 50px;
+}
+
+.MainMenuItemText {
+
+}
+
+.MainMenuItemText h3 {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.MainMenuItemText p {
+    font-size: 0.85em;
+}

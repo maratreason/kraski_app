@@ -1,0 +1,39 @@
+.BottomMenu {
+    background: #f1f1f1;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.Container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BottomMenuUl {
+
+}
+
+.BottomMenuUl li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.MenuItems {
+    font-size: 1rem;
+    color: #4d4d4d;
+}
+
+.MenuItems:hover {
+    text-decoration: underline;
+    color: #818181;
+}
+
+a {
+    text-decoration: none;
+}

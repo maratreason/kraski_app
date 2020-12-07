@@ -1,0 +1,24 @@
+.InputWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.Input {
+    background-color: #f8f8f8;
+    padding: 10px 40px 10px 15px;
+    width: 500px;
+    max-width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.Search {
+    position: relative;
+}
+
+.Search svg {
+    position: absolute;
+    right: 10px;
+    top: -8px;
+}

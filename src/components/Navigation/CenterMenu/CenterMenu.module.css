@@ -1,0 +1,57 @@
+.CenterMenu {
+    padding: 30px 0;
+}
+
+.Container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.CenterMenuLogo {
+    height: 120px;
+}
+
+.CenterMenuLogo img {
+    max-height: 100%;
+}
+
+.CenterMenuContact {
+
+}
+
+.CenterMenuContact h4 {
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.CenterMenuContact div {
+    margin-bottom: 10px;
+}
+
+.CenterMenuContact div a svg {
+    margin-right: 10px;
+}
+
+.CenterMenuCart {
+
+}
+
+.CenterMenuCart img {
+    width: 80px;
+    opacity: 0.5;
+}
+
+.MenuLinks {
+    color: #0a6c85;
+}
+
+.MenuLinks:hover {
+    text-decoration: underline;
+    color: #0b87a7;
+}
