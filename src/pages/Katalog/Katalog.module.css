@@ -1,0 +1,186 @@
+.KatalogWrapper {
+    padding: 70px 0;
+}
+
+.Container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.FlexContainer {
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.sitebar {
+    width: 22%;
+    margin-right: 30px;
+}
+
+.sitebar .katalogMenu {
+}
+
+.sitebar .katalogMenu li a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0a6c85;
+}
+
+.sitebarFilter {
+    border-radius: 5px;
+    border: 1px solid #f3f3f3;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.sitebarFilter .name {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.sitebarFilter label {
+    display: block;
+    margin-bottom: 7px;
+    position: relative;
+    font-size: 10px;
+}
+
+.sitebarFilter label input {
+    display: none;
+}
+
+.sitebarFilter label span {
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.sitebarFilter label span:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #aaa;
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+
+.sitebarFilter label span a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #0a6c85;
+}
+
+.katalog {
+    width: 75%;
+}
+
+.katalog .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.katalog .subtitle {
+
+}
+
+.katalog ul {
+    display: flex;
+    margin: 30px 0;
+}
+
+.katalog ul li {
+}
+
+.katalog ul li a {
+    font-size: 0.8rem;
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    color: #0a6c85;
+}
+
+.katalog ul li a:first-child {
+    margin-left: 0;
+}
+
+.katalog ul li a:hover {
+    background: #0a6c85;
+    color: #fff;
+}
+
+.productWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.image {
+    margin-bottom: 30px;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.productTitle {
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #0a6c85;
+}
+
+.artikul {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #5e5e5e;
+}
+
+.price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Buttons a {
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+}

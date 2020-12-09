@@ -1,0 +1,72 @@
+.FooterWrapper {
+    background: #1d1d1d;
+    color: #fff;
+    padding: 70px 0;
+}
+
+.Container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.ContainerSeparate {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.Logo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.title {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #7e7e7e;
+    margin-top: 30px;
+}
+
+.topFooter {
+    margin-bottom: 30px;
+}
+
+.textBlock:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.rightBlock {
+    display: flex;
+}
+
+.rightBlock ul {
+    list-style: none;
+}
+
+.rightBlock ul li {
+    margin: 15px 0;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.rightBlock ul li a {
+    font-size: 1rem;
+    position: relative;
+    color: #0a6c85;
+}
+
+.rightBlock ul li a:before {
+    position: absolute;
+    content: "\25b8";
+    top: 0;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+}
+
+.link {
+    color: #0a6c85;
+}

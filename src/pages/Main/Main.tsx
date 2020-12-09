@@ -9,6 +9,7 @@ import image3 from "../../uploads/image-block/3.jpg";
 import image4 from "../../uploads/image-block/6.jpg";
 import image5 from "../../uploads/image-block/7.jpg";
 import image6 from "../../uploads/image-block/8.jpg";
+import Parallax from "../../components/Parallax/Parallax";
 
 const mainSectionItems = [
     {
@@ -112,7 +113,7 @@ const Main = () => {
                     />;
                 })
             }
-            
+            <Parallax />
         </div>
     );
 };

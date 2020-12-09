@@ -10,9 +10,9 @@ const CenterMenu = () => {
     return (
         <div className={classes.CenterMenu}>
             <div className={classes.Container}>
-                <div className={classes.CenterMenuLogo}>
+                <Link to="/" className={classes.CenterMenuLogo}>
                     <img src={logo} alt="Logo"/>
-                </div>
+                </Link>
                 <div className={classes.CenterMenuContact}>
                     <h4>Оптовые продажи:</h4>
                     <div>
