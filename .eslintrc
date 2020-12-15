@@ -1,0 +1,81 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": false,
+        "codeFrame": false
+    },
+    "extends": ["airbnb", "prettier", "plugin:react/recommended"],
+    "env": {
+        "browser": true,
+        "jest": true
+    },
+    "rules": {
+        "react/jsx-props-no-spreading": [
+            "error",
+            {
+                "html": "ignore",
+                "custom": "ignore",
+                "exceptions": [""]
+            }
+        ],
+        "jsx-a11y/label-has-associated-control": [
+            2,
+            {
+                "labelComponents": ["CustomInputLabel"],
+                "labelAttributes": ["label"],
+                "controlComponents": ["CustomInput"],
+                "depth": 3,
+                "required": {
+                    "some": ["nesting", "id"]
+                }
+            }
+        ],
+        "no-unused-vars": ["off"],
+        "react/jsx-uses-react": "error",   
+        "react/jsx-uses-vars": "error",
+        "eslint-disable-next-line react/destructuring-assignment": ["off"],
+        "react/destructuring-assignment": ["off"],
+        "no-unused-expressions": ["off"],
+        "no-param-reassign": ["error", { "props": false }],
+        "jsx-a11y/no-static-element-interactions": ["off"],
+        "jsx-a11y/anchor-is-valid": ["off"],
+        "react/state-in-constructor": ["off"],
+        "max-len": ["error", { "code": 120 }],
+        "prefer-promise-reject-errors": ["off"],
+        "react/jsx-filename-extension": ["off"],
+        "react/prop-types": ["off"],
+        "no-return-assign": ["off"],
+        "react/jsx-one-expression-per-line": ["off"],
+        "semi": "error",
+        "quotes": ["error", "double"],
+        "jsx-a11y/no-noninteractive-element-interactions": ["off"],
+        "jsx-a11y/click-events-have-key-events": ["off"],
+        "import/no-unresolved": ["off"],
+        "import/no-cycle": ["off"],
+        "no-use-before-define": ["off"],
+        "import/prefer-default-export": ["off"],
+        "no-case-declarations": ["off"],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "indent": ["error", 4, { "ignoredNodes": ["JSXElement", "JSXAttribute"] }],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": ["error", 4],
+        "arrow-body-style": 0
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".ts", ".js", ".json", ".tsx", "jsx"]
+            }
+        }
+    }
+}

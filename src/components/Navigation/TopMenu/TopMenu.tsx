@@ -8,7 +8,7 @@ const TopMenu = () => {
         <div className={classes.TopMenu}>
             <div className={classes.Container}>
                 <div className={classes.leftBlock}>
-                    <Link to={"/"} className={classes.ModalButton}>
+                    <Link to="/" className={classes.ModalButton}>
                         Казань
                     </Link>
                     <div className={classes.p}>
@@ -18,12 +18,12 @@ const TopMenu = () => {
                 <div className={classes.rightBlock}>
                     <ul className={classes.TopMenu}>
                         <li>
-                            <Link className={classes.MenuItems} to={"/"}>
+                            <Link className={classes.MenuItems} to="/">
                                 О компании
                             </Link>
                         </li>
                         <li>
-                            <Link className={classes.MenuItems} to={"/"}>
+                            <Link className={classes.MenuItems} to="/">
                                 Доставка по РФ
                             </Link>
                         </li>

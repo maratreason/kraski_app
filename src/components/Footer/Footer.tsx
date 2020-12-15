@@ -8,22 +8,32 @@ const Footer = () => {
             <div className={classes.Container}>
                 <div className={classes.topFooter}>
                     <div>
-                        <Link className={classes.Logo} to="/">Logo</Link>
+                        <Link className={classes.Logo} to="/">
+                            Logo
+                        </Link>
                     </div>
-                    <hr/>
-                    <div className={classes.title}>ЛАКОКРАСОЧНЫЕ МАТЕРИАЛЫ ДЛЯ АНТИКОРРОЗИОННОЙ ЗАЩИТЫ</div>
+                    <hr />
+                    <div className={classes.title}>
+                        ЛАКОКРАСОЧНЫЕ МАТЕРИАЛЫ ДЛЯ АНТИКОРРОЗИОННОЙ ЗАЩИТЫ
+                    </div>
                 </div>
             </div>
             <div className={classes.ContainerSeparate}>
                 <div className={classes.leftBlock}>
                     <div className={classes.textBlock}>
-                        <p>ООО "Фабрика 'Краски Хеми'"</p>
+                        <p>ООО Фабрика &quot;Краски Хеми&quot;</p>
                         <p>614065, г. Пермь, ул. Промышленная, д.59</p>
                         <p>
-                            Тел./Факс: <Link className={classes.link} to="/">+7(342) 296-35-77</Link>
+                            Тел./Факс:{" "}
+                            <Link className={classes.link} to="/">
+                                +7(342) 296-35-77
+                            </Link>
                         </p>
                         <p>
-                            Email: <Link className={classes.link} to="/">info@kraskichemi.ru</Link>
+                            Email:{" "}
+                            <Link className={classes.link} to="/">
+                                info@kraskichemi.ru
+                            </Link>
                         </p>
                         <p>Рабочие часы: 09:00-18:00</p>
                     </div>
@@ -32,10 +42,16 @@ const Footer = () => {
                             <b>Отдел оптовых продаж:</b>
                         </p>
                         <p>
-                            Тел./Факс: <Link className={classes.link} to="/">+7(342) 296-36-77</Link>
+                            Тел./Факс:{" "}
+                            <Link className={classes.link} to="/">
+                                +7(342) 296-36-77
+                            </Link>
                         </p>
                         <p>
-                            Email: <Link className={classes.link} to="/">sale@kraskichemi.ru</Link>
+                            Email:{" "}
+                            <Link className={classes.link} to="/">
+                                sale@kraskichemi.ru
+                            </Link>
                         </p>
                     </div>
                 </div>
