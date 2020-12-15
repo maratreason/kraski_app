@@ -13,6 +13,8 @@
             "artikul": "7082763",
             "subDescription": "ПЕНЕТРЕКС - АКВА - экологически чистое быстросохнущее защитно-декоративное покрытие для дерева на основе водной дисперсии акриловых смол.",
             "image": "penetreks-akva-23.jpg",
+            "marka": "penetreks",
+            "mass": 2.3,
             "price": 100
         },
         {
@@ -21,6 +23,8 @@
             "artikul": "7006691",
             "subDescription": "ФЕРРА- ЭП-718 - эпоксидная двухкомпонентная грунт-эмаль с высоким сухим остатком.",
             "image": "ferra-ep-718-10.jpg",
+            "marka": "ferra",
+            "mass": 10,
             "price": 50
         },
         {
@@ -29,6 +33,8 @@
             "artikul": "7000614",
             "subDescription": "ФЕРРА- ЭП-718 - эпоксидная двухкомпонентная грунт-эмаль с высоким сухим остатком.",
             "image": "ferra-ep-718-1.jpg",
+            "marka": "ferra",
+            "mass": 1,
             "price": 30
         },
         {
@@ -37,6 +43,8 @@
             "artikul": "7082787",
             "subDescription": "ПЕНЕТРЕКС®-АКВА-ИМПРЕГНАТ - не содержащий органических растворителей быстросохнущий грунт- антисептик под лессирующие покрытия на основе водных дисперсий акриловых смол",
             "image": "penetreks-akva-impregnat-08.jpg",
+            "marka": "penetreks",
+            "mass": 0.8,
             "price": 100
         },
         {
@@ -45,15 +53,233 @@
             "artikul": "7083043",
             "subDescription": "ПЕНЕТРЕКС-УНИВЕРСАЛ - проникающая защитно-декоративная краска по дереву на основе жирных алкидов.",
             "image": "penetreks-universal-08.jpg",
+            "marka": "penetreks",
+            "mass": 2.5,
             "price": 100
         },
         {
-            "id": 7,
+            "id": 793257,
             "title": "АРХИТЕКТОР-УНИВЕРСАЛ - 011 1 кг",
             "artikul": "7026835",
             "subDescription": "АРХИТЕКТОР-УНИВЕРСАЛ - 011 – укрывающая грунтовка для дерева на основе быстросохнущих алкидных смол.",
             "image": "arhitektor-universal-011-1kg.jpg",
+            "marka": "architektor",
+            "mass": 1,
             "price": 100
+        }
+    ],
+    "filters": [
+        {
+            "id": 1,
+            "title": "Тип продукции",
+            "alias": "product_type",
+            "filter_items": [
+                {
+                    "id": 1,
+                    "title": "Грунт",
+                    "alias": "grunt",
+                    "check": false
+                },
+                {
+                    "id": 2,
+                    "title": "Эмаль",
+                    "alias": "emal",
+                    "check": false
+                },
+                {
+                    "id": 3,
+                    "title": "Грунт-Эмаль",
+                    "alias": "grunt-emal",
+                    "check": false
+                },
+                {
+                    "id": 4,
+                    "title": "Растворитель",
+                    "alias": "rastvoritel",
+                    "check": false
+                },
+                {
+                    "id": 5,
+                    "title": "Защитно-декоративные составы для дерева",
+                    "alias": "zashitno-dekorativnye-sostavy-dkya-dereva",
+                    "check": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Фасовка",
+            "alias": "fasovka",
+            "filter_items": [
+                {
+                    "id": 1,
+                    "title": "0.8 л",
+                    "alias": "0.8",
+                    "check": false
+                },
+                {
+                    "id": 2,
+                    "title": "0.9 л",
+                    "alias": "0.9",
+                    "check": false
+                },
+                {
+                    "id": 3,
+                    "title": "1 л",
+                    "alias": "1",
+                    "check": false
+                },
+                {
+                    "id": 4,
+                    "title": "2.3 л",
+                    "alias": "2.3",
+                    "check": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Марка",
+            "alias": "marka",
+            "filter_items": [
+                {
+                    "id": 1,
+                    "title": "Ферра",
+                    "alias": "ferra",
+                    "check": false
+                },
+                {
+                    "id": 2,
+                    "title": "Архитектор",
+                    "alias": "architektor",
+                    "check": false
+                },
+                {
+                    "id": 3,
+                    "title": "Пенетрекс",
+                    "alias": "penetreks",
+                    "check": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Антикоррозийная защита металла",
+            "alias": "antikorroziynaya_zashita_metalla",
+            "filter_items": [
+                {
+                    "id": 1,
+                    "title": "Алкидные материалы",
+                    "alias": "alkidnye-materialy",
+                    "check": false
+                },
+                {
+                    "id": 2,
+                    "title": "Эпоксидные материалы",
+                    "alias": "eboksidnye-materialy",
+                    "check": false
+                },
+                {
+                    "id": 3,
+                    "title": "Полиуретановые материалы",
+                    "alias": "poliuretanovye-materialy",
+                    "check": false
+                },
+                {
+                    "id": 4,
+                    "title": "Сополимерные материалы",
+                    "alias": "sopolimernye-materialy",
+                    "check": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Строительство и ремонт",
+            "alias": "stroitelstvo_i_remont",
+            "filter_items": [
+                {
+                    "id": 1,
+                    "title": "Отделка интерьера",
+                    "alias": "otdelka-interiera",
+                    "check": false
+                },
+                {
+                    "id": 2,
+                    "title": "Отделка фасада",
+                    "alias": "otdelka-fasada",
+                    "check": false
+                },
+                {
+                    "id": 3,
+                    "title": "Универсальные грунты и эмали",
+                    "alias": "universalnye-grunty-i-emali",
+                    "check": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Защита дерева",
+            "alias": "zashita_dereva",
+            "filter_items": [
+                {
+                    "id": 1,
+                    "title": "Грунты антисептики",
+                    "alias": "grunty-antiseptiki",
+                    "check": false
+                },
+                {
+                    "id": 2,
+                    "title": "Цветные защитно-декоративные составы",
+                    "alias": "tsvetnye-zashitno-dekorativnye-sostavy",
+                    "check": false
+                },
+                {
+                    "id": 3,
+                    "title": "Грунты и эмали",
+                    "alias": "grunty-i-emali",
+                    "check": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Растворитель",
+            "alias": "rastvoritel",
+            "filter_items": [
+                {
+                    "id": 1,
+                    "title": "Нефрас",
+                    "alias": "nefras",
+                    "check": false
+                },
+                {
+                    "id": 2,
+                    "title": "Сольвент",
+                    "alias": "solvent",
+                    "check": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Цвет",
+            "alias": "tsvet",
+            "filter_items": [
+                {
+                    "id": 1,
+                    "title": "орегонская сосна",
+                    "alias": "oregonskaya-sosna",
+                    "check": false
+                },
+                {
+                    "id": 2,
+                    "title": "орех",
+                    "alias": "oreh",
+                    "check": false
+                }
+            ]
         }
     ]
 }
