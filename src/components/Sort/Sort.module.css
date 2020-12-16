@@ -1,0 +1,37 @@
+.katalog ul {
+    display: flex;
+    margin: 30px 0;
+}
+
+.katalog ul li {
+}
+
+.katalog ul li a {
+    font-size: 0.8rem;
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    color: #0a6c85;
+    cursor: pointer;
+}
+
+.katalog ul li a:first-child {
+    margin-left: 0;
+}
+
+.katalog ul li a:hover {
+    background: #0a6c85;
+    color: #fff;
+}
+
+.active {
+    color: #fff !important;
+    background: #0a6c85;
+}
+
+.active:hover {
+    color: #fff;
+    background: #0a6c85;
+}

@@ -32,6 +32,7 @@
             }
         ],
         "no-unused-vars": ["off"],
+        "no-plusplus": ["off"],
         "react/jsx-uses-react": "error",   
         "react/jsx-uses-vars": "error",
         "eslint-disable-next-line react/destructuring-assignment": ["off"],

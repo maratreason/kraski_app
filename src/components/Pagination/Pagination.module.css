@@ -1,0 +1,32 @@
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.item a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.26);
+    margin: 0 3px;
+    font-weight: bold;
+    color: #444;
+}
+
+.item a:hover {
+    color: #fff;
+    background: #0a6c85;
+}
+
+.active {
+    color: #fff !important;
+    background: #0a6c85;
+}
+
+.active:hover {
+    color: #fff;
+    background: #0a6c85;
+}

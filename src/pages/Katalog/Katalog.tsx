@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
-import Button from "../../components/Buttons/Button";
 import classes from "./Katalog.module.css";
 import axios from "../../utils/axios";
-// import imageSrc = require(`${__dirname}/uploads/products/`);
+import Products from "../../components/Products/Products";
+import Sort from "../../components/Sort/Sort";
 
-const Katalog = () => {
-    const [products, setProducts] = useState([]);
+const Katalog = ({ 
+    products, 
+    loading, 
+    productsPerPage, 
+    paginate, 
+    productsLength, 
+    sortButtons, 
+    sort,
+    setSort, 
+    currentPage,
+    setCurrentPage
+}: any) => {
     const [filters, setFilters] = useState([]);
 
     useEffect(() => {
-        axios
-            .get("/products")
-            .then((response) => {
-                setProducts(response.data);
-            })
-            .catch((err) => {
-                console.error(err.message);
-            });
-
         axios
             .get("/filters")
             .then((response) => {
@@ -60,19 +60,7 @@ const Katalog = () => {
 
             <div className={classes.FlexContainer}>
                 <div className={classes.sitebar} />
-                <div className={classes.katalog}>
-                    <ul>
-                        <li>
-                            <Link to="/">Популярные</Link>
-                        </li>
-                        <li>
-                            <Link to="/">По цене</Link>
-                        </li>
-                        <li>
-                            <Link to="/">По названию</Link>
-                        </li>
-                    </ul>
-                </div>
+                <Sort sortButtons={sortButtons} sort={sort} setSort={setSort} setCurrentPage={setCurrentPage} />
             </div>
 
             <div className={classes.FlexContainer}>
@@ -98,33 +86,14 @@ const Katalog = () => {
                 </div>
 
                 <div className={classes.katalog}>
-                    <div className={classes.productWrapper}>
-                        {products &&
-                            products.map((product: any): any => {
-                                return (
-                                    <div className={classes.product} key={product.id}>
-                                        <div className={classes.image}>
-                                            <Link to={`/product/${product.id}`}>
-                                                <img
-                                                    src={`${window.location.origin}/uploads/products/${product.image}`}
-                                                    alt={product.image}
-                                                />
-                                            </Link>
-                                        </div>
-                                        <Link className={classes.productTitle} to="/">
-                                            {product.title}
-                                        </Link>
-                                        <div className={classes.artikul}>Артикул: {product.artikul}</div>
-                                        <div className={classes.description}>{product.subDescription}</div>
-                                        <div className={classes.price}>{product.price} ₽</div>
-                                        <div className={classes.Buttons}>
-                                            <Button buttonStyle="#1f861f" title="Консультация" />
-                                            <Button buttonStyle="#0a6c85" icon={<FaShoppingCart />} title="В корзину" />
-                                        </div>
-                                    </div>
-                                );
-                            })}
-                    </div>
+                    <Products 
+                        products={products} 
+                        loading={loading} 
+                        productsPerPage={productsPerPage} 
+                        paginate={paginate} 
+                        productsLength={productsLength}
+                        currentPage={currentPage}
+                    />
                 </div>
             </div>
         </div>
